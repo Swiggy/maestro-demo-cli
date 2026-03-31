@@ -1,0 +1,63 @@
+{
+  "name": "@swiggy/maestro-demo-cli",
+  "version": "1.0.4",
+  "description": "Turn Maestro mobile test flows into polished demo videos with AI voiceover",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "maestro-demo": "./dist/cli.js"
+  },
+  "main": "./dist/cli.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "publish:custom": "yarn npm publish --tag beta",
+    "publish:master": "yarn npm publish",
+    "publish-branch": "yarn version $NUMBER && yarn publish:custom",
+    "publish-stable": "yarn version patch && yarn publish:master"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "4.0.0-next.7",
+    "chalk": "^5.3.0",
+    "commander": "^12.0.0",
+    "execa": "^9.0.0",
+    "glob": "^11.0.0",
+    "js-yaml": "^4.1.0",
+    "kokoro-js": "^1.2.1",
+    "ora": "^8.0.1"
+  },
+  "optionalDependencies": {
+    "@elevenlabs/elevenlabs-js": "^2.39.0",
+    "openai": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.6.0"
+  },
+  "keywords": [
+    "maestro",
+    "demo",
+    "video",
+    "tts",
+    "mobile",
+    "testing"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Swiggy/maestro-demo-cli"
+  },
+  "files": [
+    "dist",
+    "package.json",
+    "yarn.lock",
+    "README.md"
+  ],
+  "packageManager": "yarn@4.13.0"
+}

@@ -1,0 +1,9 @@
+appId: com.example.myapplication
+---
+# @scene: launch
+# @narration: Welcome to the Hello Android app.
+- launchApp
+
+# @scene: home-screen
+# @narration: The app displays a greeting.
+- scroll
