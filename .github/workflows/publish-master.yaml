@@ -18,7 +18,7 @@ jobs:
               with:
                   node-version: "20"
                   check-latest: true
-            - run: git fetch --prune --unshallow
+            - run: git fetch --prune
             - run: |
                   make yarn_install
 
