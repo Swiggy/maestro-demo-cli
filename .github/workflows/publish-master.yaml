@@ -4,6 +4,10 @@ on:
     push:
         branches: [master]
 
+permissions:
+    id-token: write  # Required for OIDC
+    contents: read
+
 jobs:
     init:
         if: "!contains(github.event.head_commit.author.name, 'GitHub Action') && !contains(github.event.head_commit.message, '[skip ci]')"
@@ -11,13 +15,12 @@ jobs:
         timeout-minutes: 60
 
         steps:
-            - uses: actions/checkout@v3
+            - uses: actions/checkout@v6
+            - uses: actions/setup-node@v6
               with:
-                  fetch-depth: 4
-            - uses: actions/setup-node@v3
-              with:
-                  node-version: "20"
-                  check-latest: true
+                    node-version: "20"
+                    registry-url: 'https://registry.npmjs.org'
+                    package-manager-cache: false
             - run: git fetch --prune
             - run: |
                   make yarn_install
