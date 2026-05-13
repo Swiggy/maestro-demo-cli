@@ -1,6 +1,6 @@
 {
   "name": "@swiggy-npm/maestro-demo-cli",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Turn Maestro mobile test flows into polished demo videos with AI voiceover",
   "license": "MIT",
   "type": "module",
