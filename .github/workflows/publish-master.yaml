@@ -25,15 +25,9 @@ jobs:
             - run: |
                   make yarn_install
 
-            - name: Setup Git
-              uses: webfactory/ssh-agent@v0.4.1
-              with:
-                  ssh-private-key: ${{ secrets.GHA_DEPLOY_KEY }}
-
             - name: Lerna Publish
               if: "success() && !contains(github.event.head_commit.author.name, 'GitHub Action')"
               env:
-                  GH_TOKEN: ${{ secrets.GH_TOKEN }}
                   NODE_ENV: production
               run: |
                   git config user.email "action@github.com"
