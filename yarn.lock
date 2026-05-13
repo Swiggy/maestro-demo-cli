@@ -791,9 +791,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swiggy/maestro-demo-cli@workspace:.":
+"@swiggy-npm/maestro-demo-cli@workspace:.":
   version: 0.0.0-use.local
-  resolution: "@swiggy/maestro-demo-cli@workspace:."
+  resolution: "@swiggy-npm/maestro-demo-cli@workspace:."
   dependencies:
     "@elevenlabs/elevenlabs-js": "npm:^2.39.0"
     "@huggingface/transformers": "npm:4.0.0-next.7"

@@ -70,9 +70,9 @@ emulator -avd <avd-name>
 ## Installation
 
 ```bash
-yarn add -g @swiggy/maestro-demo-cli
+yarn add -g @swiggy-npm/maestro-demo-cli
 # or run directly without installing
-npx @swiggy/maestro-demo-cli pipeline my-demo
+npx @swiggy-npm/maestro-demo-cli pipeline my-demo
 ```
 
 ## Quick start
