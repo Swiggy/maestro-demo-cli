@@ -1,4 +1,5 @@
 # maestro-demo-cli
+# [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Swiggy/maestro-demo-cli/blob/master/LICENSE.md) [![npm version](https://img.shields.io/npm/v/@swiggy-npm/maestro-demo-cli.svg?style=flat)](https://www.npmjs.com/package/@swiggy-npm/maestro-demo-cli) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Swiggy/maestro-demo-cli/blob/master/CONTRIBUTING.md)
 
 Turn [Maestro](https://maestro.mobile.dev) mobile test flows into polished product demo videos with AI voiceover.
 

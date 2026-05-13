@@ -57,7 +57,8 @@
     "dist",
     "package.json",
     "yarn.lock",
-    "README.md"
+    "README.md",
+    "LICENSE.md"
   ],
   "packageManager": "yarn@4.13.0"
 }
