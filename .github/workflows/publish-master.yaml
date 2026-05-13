@@ -39,3 +39,6 @@ jobs:
                   git config user.name "GitHub Action"
                   git remote set-url origin "git@github.com:${{ github.repository }}"
                   yarn publish-stable
+                  git add package.json
+                  git commit -m "chore: bump version [skip ci]"
+                  git push origin master
